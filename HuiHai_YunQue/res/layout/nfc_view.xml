@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+    android:orientation="vertical" android:padding="10dp"
+    android:background="@drawable/main_bg_pic"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车牌"
+            android:layout_gravity="center" style="@style/CodeFont"/>
+        <EditText android:id="@+id/plate_no" android:layout_height="wrap_content" android:layout_width="fill_parent"
+            android:text="jingb2349"/>
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经办人"
+            android:layout_gravity="center" style="@style/CodeFont"/>
+        <EditText android:id="@+id/owner" android:layout_height="wrap_content" android:layout_width="fill_parent"
+            android:text="lemon"/>
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间"
+            android:layout_gravity="center" style="@style/CodeFont"/>
+        <DatePicker android:id="@+id/now" android:layout_height="wrap_content" android:layout_width="fill_parent" />
+    </LinearLayout>
+    
+    
+    <TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp" 
+        android:stretchColumns="*" android:layout_gravity="bottom">
+        <TableRow>
+        <Button android:text="send" android:layout_width="wrap_content" android:layout_height="fill_parent"
+            android:id="@+id/send"/>
+        <Button android:text="继续" android:layout_width="wrap_content" android:layout_height="fill_parent"/>
+        <Button android:text="取消" android:layout_width="wrap_content" android:layout_height="fill_parent"/>
+        </TableRow>
+    </TableLayout>
+    <!--  <TableRow android:padding="3dp">
+        
+    </TableRow>
+    
+    <TableRow android:padding="3dp">
+        
+    </TableRow>
+    
+    <TableRow android:padding="3dp">
+        
+    </TableRow> 
+    <TableRow android:padding="3dp">
+      </LinearLayout> 
+    </TableRow> -->
+    
+    <!--  <TextView android:text="条目名" android:id="@+id/edit_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/item_name_text">
+        <requestFocus></requestFocus>
+    </EditText>
+    
+    <TextView android:text="电话" android:id="@+id/edit_phone" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="phone" android:id="@+id/phone_text" android:layout_height="wrap_content" android:layout_width="fill_parent"></EditText>
+    
+    <TextView android:text="名字" android:id="@+id/edit_person_name" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="textPersonName" android:id="@+id/persone_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+    
+    <TextView android:text="" android:id="@+id/edit_no" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="textPersonName" android:id="@+id/no_txt" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+    
+    <TextView android:text="名字" android:id="@+id/test" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="textPersonName" android:id="@+id/test_txt" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+    
+    <TextView android:text="名字" android:id="@+id/test2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="textPersonName" android:id="@+id/test_2_txt" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/hlayout">
+    </LinearLayout>
+    <Button android:text="保存" android:id="@+id/submitRecordBtn" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    -->
+</LinearLayout>
+</ScrollView>

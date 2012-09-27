@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, from lemon!</string>
+    <string name="app_name">Android_Entrance</string>
+    <string name="menu_add">Android_Entrance</string>
+    <string name="menu_delete">Android_Entrance</string>
+    <string name="desc">Android_Entrance</string>
+    <string name="content">Android_Entrance</string>
+    <string name="scene">Android_Entrance</string>
+    <string name="detail">Android_Entrance</string>
+    <string name="done">Android_Entrance</string>
+</resources>

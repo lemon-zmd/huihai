@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_height="wrap_content" android:layout_width="fill_parent" 
+    android:paddingLeft="10dp" android:paddingRight="10dp"
+    android:paddingBottom="3dp" android:paddingTop="3dp" >
+    
+    <Button android:id="@+id/dashboard" android:layout_width="45dip" android:layout_height="45dip" 
+                    android:textColor="#3882b8" android:gravity="bottom"
+                    android:textSize="15px" android:background="@drawable/dashboard_enable">
+    </Button>
+    
+   <Button android:id="@+id/income" android:layout_width="48dip" android:layout_height="48dip" 
+                    android:layout_toRightOf="@id/dashboard"
+                    android:layout_marginLeft="15dip"
+                    android:textColor="#3882b8" android:gravity="bottom"
+                    android:textSize="15px" android:background="@drawable/inbox">
+    </Button>
+    
+    <Button android:id="@+id/payment" android:layout_width="48dip" android:layout_height="48dip" 
+                    android:layout_toRightOf="@id/income"
+                    android:textColor="#3882b8" android:gravity="bottom"
+                    android:layout_marginLeft="15dip"
+                    android:textSize="15px" android:background="@drawable/outbox">
+    </Button>
+    
+    <Button android:id="@+id/both" android:layout_width="48dip" android:layout_toRightOf="@id/payment"
+                    android:layout_height="48dip" android:textColor="#3882b8" android:gravity="bottom"
+                    android:layout_marginLeft="15dip" 
+                    android:textSize="15px" android:background="@drawable/shuffle">
+    </Button>
+    
+   <Button android:id="@+id/setting" android:layout_width="48dip" android:layout_height="48dip" 
+                    android:layout_toRightOf="@id/both"
+                    android:textColor="#3882b8" android:gravity="bottom"
+                    android:layout_marginLeft="15dip"
+                    android:textSize="15px" android:background="@drawable/settings" >
+    </Button> 
+    
+</RelativeLayout>

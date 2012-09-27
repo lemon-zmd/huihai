@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.huihai.yunque"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="9" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    
+    <application android:icon="@drawable/icon" android:label="惠海">
+        <activity android:name=".view.activity.MainActivity"> </activity>
+        <activity android:name=".view.activity.ExpandableDataGroupActivity"> </activity>
+        <activity android:name=".view.activity.Android_EntranceActivity" android:label="惠海"> </activity>
+        <activity android:name=".view.activity.FunctionViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.ListViewActivity"></activity>
+        <activity android:name=".view.activity.IncomeListViewActivity"></activity>
+        <activity android:name=".view.activity.EditActivity"></activity>
+        <activity android:name=".view.activity.IncomeViewActivity"></activity>
+        
+        <!--  the widget setting -->
+        <receiver android:name=".view.widget.QuickAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />  
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider" />
+        </receiver>
+        <activity android:name=".view.widget.activity.QuickWidgetActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />  
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

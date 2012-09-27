@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/main_bg_pic"
+    android:layout_height="fill_parent">
+    <!--  <include android:id="@+id/common_header" layout="@layout/common_header"/> -->
+
+
+     <RelativeLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+          
+          <FrameLayout android:layout_width="fill_parent" android:id="@+id/content_container" android:layout_height="fill_parent"
+               android:background="@drawable/round_shape_bg" android:layout_above="@+id/common_footer">
+               <include layout="@layout/main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+          </FrameLayout>
+          
+          <include android:id="@id/common_footer" layout="@layout/common_bottom_bar"
+               android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:gravity="center" android:layout_alignParentBottom="true" />
+     </RelativeLayout>
+    </LinearLayout>

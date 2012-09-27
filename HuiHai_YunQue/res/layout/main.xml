@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/main_bg_pic"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+       android:orientation="horizontal" android:padding="5dp">
+        <ImageButton android:background="@drawable/note"
+            android:gravity="left" android:layout_width="96dp"
+            android:layout_height="96dp" android:id="@+id/addModel"></ImageButton>
+        <ImageButton android:background="@drawable/folder_invoices"
+            android:layout_marginLeft="10dp"
+            android:layout_height="96dp" android:layout_width="96dp"></ImageButton>
+        <ImageButton android:background="@drawable/document"
+            android:layout_marginLeft="10dp"
+            android:layout_width="96dp" android:layout_height="96dp" android:id="@+id/deleteModel">
+            </ImageButton>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+       android:orientation="horizontal" android:padding="15dp">
+        <ImageButton android:background="@drawable/folder_invoices"
+            android:layout_gravity="left" android:layout_width="96dp"
+            android:layout_height="96dp" android:id="@+id/viewModel"></ImageButton>
+        <ImageButton android:background="@drawable/settings_main"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="right" android:layout_width="96dp"
+            android:layout_height="96dp" android:id="@+id/settings"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
+        android:background="@drawable/round_shape_grey_bg" android:orientation="vertical">
+        <TextView style="@style/CodeFont" android:text="today you have created 10 items" 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/> </LinearLayout>
+</LinearLayout>

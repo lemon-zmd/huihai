@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="@drawable/common_title_bg">
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:src="@drawable/common_arrow_left">
+    </ImageView>
+    <TextView android:id="@+id/showName" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:textColor="#343434" android:text="添加" android:textSize="16px">
+    </TextView>
+    <ImageButton android:id="@+id/returnBtn"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="3px"
+        android:layout_toLeftOf="@+id/homeBtn" android:background="@drawable/common_btn_return_selector">
+    </ImageButton>
+    <ImageButton android:id="@+id/homeBtn"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" android:layout_marginLeft="12px"
+        android:layout_marginRight="2px"
+        android:background="@drawable/common_arrow_right">
+    </ImageButton>
+        <!-- android:layout_marginTop="2px" -->
+    <ImageButton android:background="@drawable/common_down_list" android:id="@+id/downBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/showName"></ImageButton>
+</RelativeLayout>      

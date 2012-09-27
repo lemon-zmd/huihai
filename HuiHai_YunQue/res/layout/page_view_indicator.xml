@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/main_bg_pic"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" >
+    <include android:id="@+id/common_header" layout="@layout/common_header_bar"/>
+    <!-- the item type -->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:id="@+id/type_selector"   android:visibility="gone">
+        <Button android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="普通" android:id="@+id/goto_common_edit" />
+        <Button android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="一体化" android:id="@+id/ggoto_full_edit"/>
+        <Button android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="其它" android:id="@+id/ggoto_others"/>
+        <Button android:layout_width="wrap_content" android:layout_height="fill_parent"
+            android:gravity="right" android:id="@+id/collapse_btn" android:text="收起" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+        
+    <com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+    
+</LinearLayout>
